@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<vTask>
+<step>
+	<action>Select File</action>
+	<text>All Files (*.*)</text>
+	<output value="%a">Variable</output>
+</step>
+<step>
+	<action>Get Length</action>
+	<text>%a</text>
+	<output value="%b">Variable</output>
+</step>
+<step>
+	<action>IF Expression</action>
+	<text>%b&lt;2</text>
+</step>
+<step>
+	<action>Exit Run</action>
+	<indents>1</indents>
+</step>
+<step>
+	<action>END IF</action>
+</step>
+<step>
+	<action>Start</action>
+	<text>%a</text>
+	<options>Single,Hidden</options>
+	<output value="%a">Variable</output>
+</step>
+</vTask>
